@@ -127,6 +127,7 @@ void vFanStop(void) {
  */
 void vSystemInit(void) {
   ADC_vinit();
+  SPI_vInitSlave();
 
   LED_vInit(AIR_COND_PORT, AIR_COND_PIN);
   LED_vInit(TV_PORT, TV_PIN);
